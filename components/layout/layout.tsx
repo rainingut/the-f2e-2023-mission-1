@@ -34,17 +34,15 @@ const navList = [
 
 
 export default function Layout(props: any) {
-    return (<div className='bg-gray-100'>
-        <nav className='flex items-center'>
-            <Link className='logo  h-[87px]'
-            href={'/'}
-            >
+    return (<div className='h-screen bg-gray-100 overflow-auto'>
+        <nav className='flex items-center justify-around mt-[32px]'>
+            <Link className='logo inline-flex h-[87px]' href={'/'} >
                 <img src="/images/svgs/logo.png"
-                className='block h-full'/>
+                className='block w-full h-full object-contain'/>
             </Link>
-            <ul className=''>
-                {navList.map(item => <NavItem 
-                key={item}
+            <ul className='flex justify-around gap-[25px]'>
+                {navList.map(item => <NavItem
+                key={item.name}
                 {...item}
                 />)}
             </ul>
