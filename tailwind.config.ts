@@ -21,6 +21,13 @@ const config: Config = {
           200:"#ffecf3",
           600:"#ffc1d8",
         },
+        black: "#000",
+        white: "#fff",
+        gray: {
+          100:"#e2e2e2",
+          200:"#aeadab",
+          300:"#383735",
+        },
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
