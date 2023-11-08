@@ -1,3 +1,12 @@
+# The F2E 2023
+
+## CC (creative commons)
+- CC By [Yami](https://2023.thef2e.com/users/12061579704041365816) and  [yiwun](https://2023.thef2e.com/users/12061579704041365817)
+  - [figma](https://www.figma.com/file/zUhLoHTpCg3N1kOAAYSbAu/TheF2E?type=design&node-id=26-261&mode=design&t=60dwJA9dYom32iPE-0)
+
+
+# Project
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
