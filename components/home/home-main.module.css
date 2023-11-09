@@ -1,0 +1,12 @@
+.bottomImg {
+    background-image: url('/images/svgs/bottom.svg');
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.bannerImg {
+    background-image: url('/images/svgs/cat-web.png');
+    /* background-size: contain; */
+    background-position: 80%  center;
+    background-repeat: no-repeat;
+}

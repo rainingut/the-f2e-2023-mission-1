@@ -38,7 +38,7 @@ const navList = [
 export default function Layout(props: any) {
     const styleCtx: any = useContext(StyleContext);
     const {bgColor} = styleCtx?.styleObj;
-    return (<div className={'h-screen overflow-auto ' + bgColor}>
+    return (<div className={'h-screen overflow-auto scroll-bar flex flex-col ' + bgColor}>
         <nav className='flex items-center justify-around mt-[32px]'>
             <Link className='logo inline-flex h-[87px]' href={'/'} >
                 <img src="/images/svgs/logo.png"
@@ -51,6 +51,6 @@ export default function Layout(props: any) {
                 />)}
             </ul>
         </nav>
-        <main>{props.children}</main>
+        <main className='grow overflow-auto scroll-bar relative'>{props.children}</main>
     </div>);
 }
