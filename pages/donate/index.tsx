@@ -1,5 +1,12 @@
-export default function Donate(){
-    return (<>
-        hi! donate
-    </>)
-}
+import StyleContext from "@/stores/style-context"
+import { useContext, useEffect } from "react"
+
+export default function Donate (){
+    const styleCtx: any = useContext(StyleContext);
+    useEffect(()=>{
+        styleCtx?.changeBgColor?.('bg-gray-100');
+    },[]);
+    return <>
+        hi Donate
+    </>
+} 

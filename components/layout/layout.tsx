@@ -1,4 +1,6 @@
 import { Fragment } from 'react';
+import { useContext } from 'react';
+import StyleContext from '@/stores/style-context';
 import Link from 'next/link';
 import NavItem from './nav-item';
 const navList = [
@@ -34,7 +36,9 @@ const navList = [
 
 
 export default function Layout(props: any) {
-    return (<div className='h-screen bg-gray-100 overflow-auto'>
+    const styleCtx: any = useContext(StyleContext);
+    const {bgColor} = styleCtx?.styleObj;
+    return (<div className={'h-screen overflow-auto ' + bgColor}>
         <nav className='flex items-center justify-around mt-[32px]'>
             <Link className='logo inline-flex h-[87px]' href={'/'} >
                 <img src="/images/svgs/logo.png"
