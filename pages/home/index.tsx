@@ -14,8 +14,7 @@ export default function Home (){
         setCurrent(2);
     };
     return <div className={"w-full h-full " + _style.bottomImg}>
-        {/* { current===1 && <HomeMain changeView={changeCurrentView} /> }
-        { current===2 && <HomeDesc/> } */}
-        <HomeDesc/>
+        { current===1 && <HomeMain changeView={changeCurrentView} /> }
+        { current===2 && <HomeDesc/> }
     </div>
 } 

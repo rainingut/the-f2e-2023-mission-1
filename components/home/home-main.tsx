@@ -3,9 +3,9 @@ export default function HomeMain (props: any) {
     const {changeView} = props;
 return (
     <div className={'w-full h-full ' + _style.bannerImg}>
-        <div className={"flex m-auto w-[80%] h-full items-center "}>
+        <div className={"flex  justify-center m-auto max-w-[1280px] h-full items-center "}>
             <div className="text flex flex-col w-[60%]">
-                <img className="inline-block mb-[48px]" src='./images/svgs/banner.png'/>
+                <img className="inline-block mb-[48px] max-w-[600px]" src='./images/svgs/banner.png'/>
                 <button className="w-fit bg-black text-white px-[20px] py-[10px] rounded-full flex items-center"
                 onClick={changeView}>
                     <span>候選人簡介</span>
