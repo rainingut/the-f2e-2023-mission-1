@@ -50,7 +50,7 @@ export default function Contact (){
                     <li>電話：(02) 888-5678</li>
                     <li>郵件：mailto:meowoffice@linmeow.tw</li>
                 </ul>
-                <img src="/images/svgs/cat-hands.png" alt="paws" className="absolute inline-block bottom-full left-full ml-[-40px] mb-[-1px]"/>
+                <img src="/images/svgs/cat-hands.png" alt="paws" className="absolute inline-block bottom-full right-0 ml-[-40px] mb-[-1px]"/>
             </div>
         </div>
     </div>
