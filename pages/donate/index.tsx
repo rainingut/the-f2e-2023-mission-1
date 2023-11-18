@@ -36,7 +36,7 @@ export default function Donate (){
         styleCtx?.changeBgColor?.('bg-gray-100');
     },[]);
     return <div className="h-full grow pt-[50px] max-w-[1280px] mx-auto">
-        <h1 className="pb-[50px] w-fit mx-auto"><img className="inline-block" src="/images/svgs/title-donate.png"/></h1>
+        <h1 className="pb-[50px] w-fit mx-auto"><img className="inline-block" src="/images/svgs/title-donate.png" alt="小額捐贈" /></h1>
         <div className="flex items-strech">
             <ul className="flex flex-col w-1/2">
                 {donateTypes.map(item => (<li 

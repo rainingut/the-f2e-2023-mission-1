@@ -63,7 +63,7 @@ export default function Policy (){
         styleCtx?.changeBgColor?.('bg-primary-');
     },[]);
     return <div className="h-full pt-[50px] max-w-[1280px] mx-auto">
-        <h1 className="title w-fit text-center m-auto mb-[30px]"><img className="inline-block" src="/images/svgs/title-policy.png"/></h1>
+        <h1 className="title w-fit text-center m-auto mb-[30px]"><img className="inline-block" src="/images/svgs/title-policy.png" alt="政治議題"/></h1>
 
         <div className="flex gap-8 items-strech justify-between">
             {policys.map(policy => (<div key={policy.title} className="flex flex-col items-strech w-[350px] py-6 px-[15px]">

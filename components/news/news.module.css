@@ -1,0 +1,23 @@
+.card {
+    position: relative;
+}
+.card::before, .card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+
+}
+.card::before{
+    left: 0;
+    width: 20px;
+    height: 20px;
+    aspect-ratio: 1 / 1;
+    background: black;
+    border-radius: 50%;
+}
+.card:not(:last-of-type):after {
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background: #000;
+}
