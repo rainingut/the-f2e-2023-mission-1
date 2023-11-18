@@ -1,5 +1,6 @@
 import StyleContext from "@/stores/style-context"
 import { useContext, useEffect, useRef, useState } from "react"
+const pawBG = `bg-[url(/images/svgs/cat-hands.png)] bg-no-repeat bg-[right_10%_bottom_150px]`;
 
 export default function Contact (){
     const styleCtx: any = useContext(StyleContext);
@@ -9,8 +10,8 @@ export default function Contact (){
         styleCtx?.changeBgColor?.('bg-primary-');
     },[]);
 
-    return (<div className="relative w-full h-full">
-        <div className="max-w-[1280px] m-auto pt-[50px] ">
+    return (<div className={"relative w-full h-full overflow-auto scroll-bar flex flex-col justify-between "+pawBG}>
+        <div className={"max-w-[1280px] m-auto pt-[50px] mb-2 grow " }>
             <h1 className="mb-7 text-center"><img className="inline-block" src="/images/svgs/title-mail.png" alt="服務信箱" /></h1>
             <div className="description w-fit mx-auto mb-[42px] text-center font-bold text-gray-300 text-xl">
                 <p>親愛的鄉親，每位市民的意見是我們社區前進的原動力。</p>
@@ -42,15 +43,15 @@ export default function Contact (){
             </form>
         </div>
 
-        <div className="footer absolute bottom-0 left-0 w-full bg-black text-white">
+        <div className="footer sticky bottom-0 left-0 w-full bg-black text-white">
             <div className="relative flex justify-between items-center  py-10 max-w-[960px] mx-auto">
                 <div>© 2023 喵立翰 版權所有。</div>
                 <ul>
-                    <li>地址：喵星區，毛茸茸大道88號，喵喵大樓3樓</li>
-                    <li>電話：(02) 888-5678</li>
-                    <li>郵件：mailto:meowoffice@linmeow.tw</li>
+                    <li>地址：<a href="https://maps.app.goo.gl/qempUe4hfMnHUBxm9" target="blank">喵星區，毛茸茸大道88號，喵喵大樓3樓</a></li>
+                    <li>電話：<a href="tel:+88628865678">(02) 888-5678</a></li>
+                    <li>郵件：<a href="mailto:meowoffice@linmeow.tw">meowoffice@linmeow.tw</a></li>
                 </ul>
-                <img src="/images/svgs/cat-hands.png" alt="paws" className="absolute inline-block bottom-full right-0 ml-[-40px] mb-[-1px]"/>
+                {/* <img src="/images/svgs/cat-hands.png" alt="paws" className="absolute inline-block bottom-full right-0 ml-[-40px] mb-[-1px]"/> */}
             </div>
         </div>
     </div>
